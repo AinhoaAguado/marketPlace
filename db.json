@@ -1,0 +1,32 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "title": "Desarrollo Web - FrontEnd Web Developer",
+        "subtitle": "El mejor curso para aprender a crear aplicaciones Web Modernas con HTML, CSS y JavaScript. Serás un FrontEnd Developer!",
+        "description": "En este curso aprenderemos a crear aplicaciones Web de Cero a Experto, utilizando HTML, CSS y JavaScript con las últimas versiones al día de hoy! Aprenderán absolutamente desde cero HTML, CSS y JavaScript con el objetivo de crear increíbles aplicaciones Web",
+        "price": "9.99€"
+      },
+      {
+        "id": 2,
+        "title": "Master en programación Fullstack Web Developer",
+        "subtitle": "Bootcamp completo HMTL5, CSS, JQuery, JavaScript, TypeScript, React, Node, desde cero a nivel experto",
+        "description": "Programar sitios y aplicaciones web JavaScript con TypeScript, aprenderás a desarrollar tanto el fronted como el backend de tu aplicación",
+        "price": "12.99€"
+      },
+      {
+        "id": 3,
+        "title": "Backend con Python desde 0, proyecto real, APIs, JWT, SQL, GIT",
+        "subtitle": "Aprende a programar desde cero con Python y conviértete en desarrollador backend con Python y SQL creando una api rest",
+        "description": "En este curso aprenderás a programar desde 0, incluso si nunca antes has escuchado hablar sobre programación. Obtendrás las bases solidas del lenguaje Python para dominarlo como un profesional experimentado.",
+        "price": "8.99€"
+      },
+      {
+        "id": 4,
+        "title": "Diseño UX: experiencia de usuario UX/UI + Figma 2023",
+        "subtitle": "Aprende, conoce y aplica técnicas de User Experience Design y Design Thinking - Curso UX UI Design + Diseño Web y Mobile",
+        "description": "Aprende habilidades de diseño UX/UI para crear productos y servicios innovadores, y convertirse en un diseñador UX/UI profesional. Aprenderás técnicas efectivas de diseño y cómo aplicarlas para crear experiencias de usuario exitosas. ",
+        "price": "11.99€"
+      }
+    ]
+  }
