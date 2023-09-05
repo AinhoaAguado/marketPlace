@@ -1,8 +1,42 @@
-# React + Vite
+![logo blanco](https://github.com/AinhoaAguado/marketPlace/assets/135590740/c6688ea5-4043-4071-be03-5dfe3f5da1d4)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sell Dev courses
+This project is a Dev Marketplace, developed using React. The main goal of this platform is to allow developers to easily and securely create, edit and sell their courses to people ho would like to learn about diferents programing technologies.
 
-Currently, two official plugins are available:
+## Features
+Course Listings: The devs can view a list of all their courses available for sale.
+Course Details: Also, they can edit and set up the information about each course, including images, features.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![csslogo](https://img.shields.io/badge/CSS3-1572B6)
+
+
+
+## Installation
+1. Clone this repository to your local machine.
+2. Navigate to the project folder in the terminal.
+
+# Frontend (React)
+3. Install dependecies.
+
+    ```sh
+    npm install
+    ```
+
+## Getting Started
+
+1. Start the frontend development server to access the application.
+   
+    ```sh
+    npm run dev
+    ```
+
+
+## Developers
+Pedro Martínez <br>
+Emily Martínez <br>
+Ainhoa Aguado  <br>
+Victor Nash <br>
+Bryan Mariano <br>
+Geovanny Catari <br>
