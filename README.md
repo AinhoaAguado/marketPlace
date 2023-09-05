@@ -4,7 +4,8 @@
 This project is a Dev Marketplace, developed using React. The main goal of this platform is to allow developers to easily and securely create, edit and sell their courses to people ho would like to learn about diferents programing technologies.
 
 ## Features
-Course Listings: The devs can view a list of all their courses available for sale.
+Create course: In this dashboard the Dev can setup all the features of their courses like picture, description, title, etc. <br>
+Course Listings: The devs can view a list of all their courses available for sale. <br>
 Course Details: Also, they can edit and set up the information about each course, including images, features.
 
 ## Technologies Used
