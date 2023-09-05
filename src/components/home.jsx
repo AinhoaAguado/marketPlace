@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
+import CardEditForm from './functions/CardEdit';
 
 function Home() {  
   const [Info, setInfo] = useState([])
@@ -27,6 +28,7 @@ function Home() {
             <div>
             {infoi.price}
             </div>
+            <button onClick={() => CardEditForm(infoi.id)}>Click me</button>
             </li>
           ))}
       </ul>
