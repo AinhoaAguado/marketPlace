@@ -1,6 +1,7 @@
 import Nav from './components/Organisms/navBar/Nav'
-import Home from "./components/Organisms/home"
-import Footer from './components/Organisms/Footer/Footer'
+import Home from "./components/Organisms/home/home"
+import FooterHome from './components/Organisms/Footer/Footer'
+import './App.css'
 
 const App = () => {
 
@@ -8,8 +9,8 @@ const App = () => {
     <>
       <Nav />
       <Home />
-      <Footer />
       
+      <FooterHome />
     </>
   )
 }

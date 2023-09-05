@@ -11,7 +11,7 @@ import TikTok from "../../../assets/tik-tok.png"
 
 import './Footer.css'
 
-function Footer (){
+function FooterHome (){
     return (
         <footer>
             <Logo style="logoFooter" source={LogoWhite} description={"Company Logo"}/>
@@ -30,4 +30,4 @@ function Footer (){
         
     )
 }
-export default Footer;
+export default FooterHome;
