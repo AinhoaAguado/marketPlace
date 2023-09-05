@@ -1,18 +1,16 @@
 import './App.css'
 import Nav from './components/Organisms/navBar/nav'
 import Footer from './components/Organisms/Footer/Footer'
-import CardProducts from './components/Organisms/cardProducts/CardProducts'
-import AddCourse from './components/Organisms/AddCourseFORM/AddCourse'
+import Home from "./components/home"
 
-
-function App() {
+const App = () => {
 
   return (
     <>
       <Nav/>
-      <CardProducts />
-      <AddCourse />
+      <Home />
       <Footer/>
+      
     </>
   )
 }
