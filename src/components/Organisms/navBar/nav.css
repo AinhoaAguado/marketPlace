@@ -1,0 +1,30 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("../../../assets/fondoBanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-container{
+}
+
+nav > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    border: .3px solid white;
+    border-radius: 4px;
+    margin: 1em 0.5em 2em ;
+    color: white;
+    padding: .5em;
+}
+.btnOrange{
+    background-color: #FF5440;
+}
+.btnBlue{
+    background-color: #81BDD7;
+}

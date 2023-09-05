@@ -8,3 +8,5 @@ function Button ({text, style, type, method}){
 }
 
 export default Button;
+
+{/* <button className={style} type={type} onClick={method}>{text}</button> */}

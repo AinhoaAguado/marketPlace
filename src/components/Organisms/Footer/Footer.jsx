@@ -9,6 +9,8 @@ import Facebook from "../../../assets/facebook.png";
 import Tweeter from "../../../assets/tweeter.png"
 import TikTok from "../../../assets/tik-tok.png"
 
+import './Footer.css'
+
 function Footer (){
     return (
         <footer>
