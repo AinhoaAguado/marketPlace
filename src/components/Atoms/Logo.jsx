@@ -1,4 +1,4 @@
-
+import React from "react";
 
 function Logo ({source, description, style}){
     return(
