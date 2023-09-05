@@ -23,7 +23,9 @@ nav > div{
 }
 .btnOrange{
     background-color: #FF5440;
+    cursor: pointer;
 }
 .btnBlue{
     background-color: #81BDD7;
+    cursor: pointer;
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 
 function Home() {  
   const [Info, setInfo] = useState([])
@@ -12,7 +14,7 @@ function Home() {
   return (
     <main>
       <h1>Bienvenido Sergio</h1>
-      <button>Add Course</button>
+      <button><Link to="AddForm">Add Course</Link></button>
       <ul>
       {Info.map(infoi => (
           <li key = {infoi.id}>

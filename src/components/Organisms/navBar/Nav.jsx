@@ -4,6 +4,7 @@ import './nav.css'
 
 import Button from "../../Atoms/Button"
 import Logo from "../../Atoms/Logo"
+import { Link } from "react-router-dom"
 
 function Nav() {
   return (
@@ -11,7 +12,7 @@ function Nav() {
     <header>
         <nav>
           <div className="logo-container">
-            <Logo style="logoWhite" source={ImgLogo} description={"Company Logo"}/>            
+          <Link to="/"><Logo style="logoWhite" source={ImgLogo} description={"Company Logo"}></Logo></Link>            
           </div>
           <div>
               <img src={UserImg} alt="Imagen de usuario" className="imgUser" />
