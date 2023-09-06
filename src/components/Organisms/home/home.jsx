@@ -16,24 +16,27 @@ function Home() {
       <Link to="AddForm"><button className='button__add-course'>Add Course</button></Link>
       <ul className='card__container'>
       {Info.map(infoi => (
-          <li key = {infoi.id} className='card'>
-            <div className='card__texts'>
+        <li key = {infoi.id} className='card'>
+          <div>
+            <img src={`data:image/png;base64,${infoi.img}`} className="card__image" alt="aqui van imagenes"  />
+          </div>
+          <div className='card__texts'>
             <div className='card__title'>
-            {infoi.title}
+              {infoi.title}
             </div>
             <div className='card__price'>
-            {infoi.price}
+              {infoi.price}
             </div>
             <div className='card__subtitle'>
-            {infoi.subtitle}
+              {infoi.subtitle}
             </div>
             <div className='card__description'>
-            {infoi.description}
+              {infoi.description}
             </div>
             <button className='button__edit'>Edit</button>
             <button className='button__post'>Post</button>
-            </div>
-            </li>
+          </div>
+        </li>
           ))}
       </ul>
     </main>
