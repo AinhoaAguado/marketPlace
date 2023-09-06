@@ -31,7 +31,7 @@ const AddCourseForm = () => {
 
     data = {
       img: imageData,
-      title: data.firtsName,
+      title: data.firstName,
       description: data.description,
       price: data.price
     }

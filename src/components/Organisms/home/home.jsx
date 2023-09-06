@@ -25,7 +25,7 @@ function Home() {
               {infoi.title}
             </div>
             <div className='card__price'>
-              {infoi.price}
+            `{infoi.price}€`
             </div>
             <div className='card__subtitle'>
               {infoi.subtitle}

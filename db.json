@@ -1,28 +1,28 @@
 {
-    "courses": [
-      {
-        "id": 1,
-        "title": "Desarrollo Web - FrontEnd Web Developer",
-        "description": "In this course we will learn how to create Web applications from Zero to Expert, using HTML, CSS and JavaScript with the latest versions as of today! You will learn absolutely from scratch HTML, CSS and JavaScript with the goal of creating amazing Web applications.",
-        "price": "9.99€"
-      },
-      {
-        "id": 2,
-        "title": "Master in Fullstack Web Developer",
-        "description": "Program JavaScript web sites and applications with TypeScript, you will learn how to develop both the frontend and the backend of your application.",
-        "price": "12.99€"
-      },
-      {
-        "id": 3,
-        "title": "Backend with Python from 0, real project, APIs, JWT, SQL, GIT",
-        "description": "In this course you will learn how to program from scratch, even if you have never heard of programming before. You will get a solid foundation in the Python language to master it like a seasoned professional.",
-        "price": "8.99€"
-      },
-      {
-        "id": 4,
-        "title": "UX/UI design: user experience UX/UI + Figma 2023",
-        "description": "Learn UX/UI design skills to create innovative products and services, and become a professional UX/UI designer. You will learn effective design techniques and how to apply them to create successful user experiences.",
-        "price": "11.99€"
-      }
-    ]
-  }
+  "courses": [
+    {
+      "id": 1,
+      "title": "Desarrollo Web - FrontEnd Web Developer",
+      "description": "In this course we will learn how to create Web applications from Zero to Expert, using HTML, CSS and JavaScript with the latest versions as of today! You will learn absolutely from scratch HTML, CSS and JavaScript with the goal of creating amazing Web applications.",
+      "price": "9.99"
+    },
+    {
+      "id": 2,
+      "title": "Master in Fullstack Web Developer",
+      "description": "Program JavaScript web sites and applications with TypeScript, you will learn how to develop both the frontend and the backend of your application.",
+      "price": "12.99"
+    },
+    {
+      "id": 3,
+      "title": "Backend with Python from 0, real project, APIs, JWT, SQL, GIT",
+      "description": "In this course you will learn how to program from scratch, even if you have never heard of programming before. You will get a solid foundation in the Python language to master it like a seasoned professional.",
+      "price": "8.99"
+    },
+    {
+      "id": 4,
+      "title": "UX/UI design: user experience UX/UI + Figma 2023",
+      "description": "Learn UX/UI design skills to create innovative products and services, and become a professional UX/UI designer. You will learn effective design techniques and how to apply them to create successful user experiences.",
+      "price": "11.99"
+    }
+  ]
+}
