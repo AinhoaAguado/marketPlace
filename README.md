@@ -9,8 +9,10 @@ Course Listings: The devs can view a list of all their courses available for sal
 Course Details: Also, they can edit and set up the information about each course, including images, features.
 
 ## Technologies Used
+![FIGMA](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![csslogo](https://img.shields.io/badge/CSS3-1572B6)
+![csslogo](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
 
 
 
@@ -25,9 +27,9 @@ Course Details: Also, they can edit and set up the information about each course
     npm install
     ```
 
-## Getting Started
+Getting Started
 
-1. Start the frontend development server to access the application.
+4. Start the frontend development server to access the application.
    
     ```sh
     npm run dev
