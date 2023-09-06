@@ -49,7 +49,7 @@ const AddCourseForm = () => {
 
       <div className="container__buttons">
       <input type="submit" value="ADD" id="button__submit"/>
-      <Link to="/"><button className="button__back" >BACK</button></Link>
+      <Link to="/" className="button__back" ><button className="button__back" >BACK</button></Link>
     </div>
 
       </div>

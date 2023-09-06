@@ -112,7 +112,7 @@ img {
 
 #button__submit {
     height: 5.5rem;
-    width: 14.5rem;
+    width: 11rem;
     background-color: #81BDD7;
     color: white;
     font-size: 2rem;
@@ -136,11 +136,15 @@ input {
 
 .button__back {
     height: 5.5rem;
-    width: 14.5rem;
+    width: 11rem;
     background-color: #81BDD7;
     color: white;
     font-size: 2rem;
     font-weight: 500;
     border-radius: 1rem;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
