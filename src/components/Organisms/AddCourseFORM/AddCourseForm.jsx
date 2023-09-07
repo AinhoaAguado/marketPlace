@@ -2,13 +2,54 @@ import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import Nav from "../navBar/Nav";
 import Footer from "../Footer/Footer";
+import React, { useState } from 'react';
 import './addCourseForm.css'
 
-
-
 const AddCourseForm = () => {
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+   
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const [imageData, setImageData] = useState('');
+    const [imagePreview, setImagePreview] = useState(null);
+
+    const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+    reader.onload = () => {
+      const base64Data = reader.result.split(',')[1];
+      setImageData(base64Data);
+      setImagePreview(reader.result);
+     
+    };
+    if (file) {
+      reader.readAsDataURL(file);
+      
+    }
+  };
+
+  
+
+  const onSubmit = (data) => {
+
+    data = {
+      img: imageData,
+      title: data.firstName,
+      description: data.description,
+      price: data.price
+    }
+
+    fetch('http://localhost:3000/courses', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify( data ),
+    })
+      .then((response) => response.json())
+      .catch((error) => {
+        console.error('Error al subir la imagen:', error);
+      });
+    }
+
   return (
     <>
     <Nav />
@@ -18,9 +59,10 @@ const AddCourseForm = () => {
       <h1>FORM</h1>
 
       <label htmlFor="file__image" className="file__image" >
-        <img src="src/assets/icon-image-file.svg" alt="icon__file-upload" />
+      { !imagePreview && <img src="src/assets/icon-image-file.svg" alt="icon__file-upload" /> }
+        {imagePreview && <img src={imagePreview} alt="Preview" className= "file__imagePreview" />}
       </label>
-      <input type="file" placeholder="img" id="file__image"/>
+      <input type="file" placeholder="img" id="file__image" onChange={handleImageChange} />
 
       <div className="container__input">
       <label htmlFor="course__title">COURSE TITLE</label>
@@ -48,7 +90,7 @@ const AddCourseForm = () => {
       </div>
 
       <div className="container__buttons">
-      <input type="submit" value="ADD" id="button__submit"/>
+      <input type="submit" value="ADD" id="button__submit" />
       <Link to="/" className="button__back" ><button className="button__back" >BACK</button></Link>
     </div>
 

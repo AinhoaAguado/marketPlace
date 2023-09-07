@@ -96,8 +96,16 @@ label {
     cursor: pointer;
     margin: 0;
     display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.file__imagePreview{
+    display: flex;
     justify-self: center;
     align-self: center;
+    width: 30%;
+
 }
 
 #file__image {
