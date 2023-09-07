@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './home.css';
+import "./modalStyle.css"
 
 function Home() {
   const [courses, setCourses] = useState([]);
@@ -111,38 +112,49 @@ function Home() {
         ))}
       </ul>
 
-      {modalVisible && (
-        <div className="modal">
-          <h2>Editar Producto</h2>
-          <input
-            type="text"
-            value={nuevoTitulo}
-            placeholder={nuevoTitulo}
-            onChange={(e) => setNuevoTitulo(e.target.value)}
-          />
-          <input
-            type="text"
-            value={nuevaDescripcion}
-            placeholder={nuevaDescripcion}
-            onChange={(e) => setNuevaDescripcion(e.target.value)}
-          />
-          <input
-            type="number"
-            value={nuevoPrecio}
-            placeholder={nuevoPrecio}
-            onChange={(e) => setNuevoPrecio(e.target.value)}
-          />
-          <input
-            type="file"
-            accept="image/*"
-            onChange={handleImageChange}/>
 
-          <button onClick={handleGuardarClick}>Guardar</button>
-          <button onClick={() => setModalVisible(false)}>Cancelar</button>
-        </div>
-      )}
-    </main>
-  );
-}
+  {modalVisible && (
+  <div className="modal__container">
+    <div className='modal__background'>
+      <h2 className='modal__text'>Edit Product</h2>
+      <label htmlFor="file__image" className='file__image'>
+        <img src="src/assets/icon-image-file.svg" alt="icon__file-upload" />
+      </label>
+      <input id='file__image' type="file" placeholder='img' onChange={handleImageChange} />
+      <div className='container__input'>
+        <label htmlFor="course__title">Course Title</label>
+          <div className=''>
+            <input id='input__title' type="text" placeholder={nuevoTitulo} value={nuevoTitulo} onChange={(e) => setNuevoTitulo(e.target.value)} />
+          </div>
+      </div>
+    <div className='container__input'>
+      <label htmlFor="course__price">Price</label>
+      <input 
+      className='input__price'
+        type="number"
+        placeholder={nuevoPrecio}
+        value={nuevoPrecio}
+        onChange={(e) => setNuevoPrecio(e.target.value)}
+      />
+    </div>
+    <div className='container__input'>
+      <label htmlFor="course__description">DESCRIPTION</label>
+      <input className='input__description'
+        type="text"
+        placeholder={nuevaDescripcion}
+        value={nuevaDescripcion}
+        onChange={(e) => setNuevaDescripcion(e.target.value)}
+      />
+    </div>
+    <div className='container__buttons'>
+      <button id='button__submit' onClick={handleGuardarClick}>Guardar</button>
+      <button id='button__back' onClick={() => setModalVisible(false)}>Cancelar</button>
+    </div>
+    </div>
+  </div>
+)}
+  </main>
+
+)}
 
 export default Home;

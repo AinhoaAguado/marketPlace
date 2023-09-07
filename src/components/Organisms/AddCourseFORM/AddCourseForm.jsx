@@ -61,7 +61,7 @@ const AddCourseForm = () => {
             accept="image/*"
             onChange={handleImageChange}/>
     
-      <input type="submit" />
+    <Link to="/"> <input type="submit" /></Link>
     </form>   
 
     <Link to="/"><Button text="Back" style="btn btnBlue" /></Link>
