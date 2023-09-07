@@ -44,9 +44,6 @@ const AddCourseForm = () => {
       body: JSON.stringify( data ),
     })
       .then((response) => response.json())
-      .then((responseData) => {
-        // Manejar la respuesta del servidor si es necesario.
-      })
       .catch((error) => {
         console.error('Error al subir la imagen:', error);
       });
