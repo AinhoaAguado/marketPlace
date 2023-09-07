@@ -9,7 +9,6 @@ const App = () => {
     <>
       <Nav />
       <Home />
-      
       <FooterHome />
     </>
   )
