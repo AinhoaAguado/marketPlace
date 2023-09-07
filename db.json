@@ -1,27 +1,25 @@
 {
-  "courses": [
-    {
       "courses": [
         {
           "id": 1,
           "title": "Desarrollo Web - FrontEnd Web Developer",
           "subtitle": "The best course to learn how to create Modern Web applications with HTML, CSS and JavaScript. You will be a FrontEnd Developer!",
           "description": "In this course we will learn how to create Web applications from Zero to Expert, using HTML, CSS and JavaScript with the latest versions as of today! You will learn absolutely from scratch HTML, CSS and JavaScript with the goal of creating amazing Web applications.",
-          "price": "9.99€"
+          "price": "9.99"
         },
         {
           "id": 2,
           "title": "Master in Fullstack Web Developer",
           "subtitle": "Complete Bootcamp HMTL5, CSS, JQuery, JavaScript, TypeScript, React, Node, from zero to expert level.",
           "description": "Program JavaScript web sites and applications with TypeScript, you will learn how to develop both the frontend and the backend of your application.",
-          "price": "12.99€"
+          "price": "12.99"
         },
         {
           "id": 3,
           "title": "Backend with Python from 0, real project, APIs, JWT, SQL, GIT",
           "subtitle": "Learn how to program from scratch with Python and become a backend developer with Python and SQL by creating a rest api.",
           "description": "In this course you will learn how to program from scratch, even if you have never heard of programming before. You will get a solid foundation in the Python language to master it like a seasoned professional.",
-          "price": "8.99€"
+          "price": "8.99"
         },
         {
           "id": 4,
@@ -31,6 +29,4 @@
           "price": "11.99€"
         }
       ]
-    }
-  ]
 }
