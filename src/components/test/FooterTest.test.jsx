@@ -67,7 +67,6 @@ describe("Footer Images test", () => {
       expect(img.src).toBeDefined();
       expect(img.src).toBeTruthy();
     });
-    console.log(imgElement)
   });
 })
 

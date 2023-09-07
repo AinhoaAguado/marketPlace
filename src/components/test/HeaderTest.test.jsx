@@ -30,8 +30,17 @@ describe("Header test", () => {
     });
 
     test("Testing that the div of logo container has renderder the logo-container class",() =>{
-        const logoContainer = document.querySelector('logo-container');//Habría que usar screen, envez de document.
-    })
+        const logoContainer = document.querySelector('logo-container');
+        expect(logoContainer).toBeDefined();
+    });
+    test("Testing that the Logo has rendered",() =>{
+        const logo = document.querySelector('logoWhite');
+        expect(logo).toBeDefined()
+    });
+    test("Testing that the Nav has rendered",() =>{
+        const logo = document.querySelector('nav');
+        expect(logo).toBeDefined()
+    });
 })
 
     
