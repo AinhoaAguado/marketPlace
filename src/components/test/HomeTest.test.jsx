@@ -56,19 +56,24 @@ describe("Button Props and render Tests", () => {
     });
 
     test("Test if the card title renders correctly",() => {
-        expect(screen.getByText('Master in Fullstack Web Developer')).toBeDefined();
+        expect(screen.getByText('Desarrollo Web - FrontEnd Web Developer')).toBeDefined();
     });
     test("Test if the card description renders correctly",() => {
         expect(screen.getByText('In this course we will learn how to create Web applications from Zero to Expert, using HTML, CSS and JavaScript with the latest versions as of today! You will learn absolutely from scratch HTML, CSS and JavaScript with the goal of creating amazing Web applications.')).toBeDefined();
     });
     test("Test if the price renders correctly",() => {
-        expect(screen.getByText('12.99€')).toBeDefined();
+        expect(screen.getByText('9.99€')).toBeDefined();
     });
-    test("Test if the img renders correctly",() => {
-        expect(screen.getByText('12.99€')).toBeDefined();
-    });
-
     
-
+    //Second list of components.
+    test("Test if the 2nd card title renders correctly",() => {
+        expect(screen.getByText('Master in Fullstack Web Developer')).toBeDefined();
+    });
+    test("Test if the 2nd card description renders correctly",() => {
+        expect(screen.getByText('Program JavaScript web sites and applications with TypeScript, you will learn how to develop both the frontend and the backend of your application.')).toBeDefined();
+    });
+    test("Test if the 2nd price renders correctly",() => {
+        expect(screen.getByText('12.99€')).toBeDefined();
+    });
     
 })
