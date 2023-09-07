@@ -29,6 +29,7 @@
     height: 100%;
 }
 .modal__text{
+    margin-top: 3%;
     font-size: 2rem;
     color: #80888F;
     font-weight: 500;
@@ -58,7 +59,7 @@
 label {
     display: flex;
     margin-bottom: 0.7rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #80888F;
     font-weight: 500;
     margin-left: 6%;
@@ -125,7 +126,10 @@ img {
     cursor: pointer;
 }
 input {
-    font-size: 2rem;
+    margin-left: 10%;
+    width: 80%;
+    border-radius: 30px;
+    border: 0.6px solid grey;
 }
 #button__back{
     height: 5.5rem;
@@ -142,3 +146,4 @@ input {
     text-decoration: none;
     cursor: pointer;
 }
+

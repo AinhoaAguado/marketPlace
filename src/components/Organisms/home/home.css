@@ -26,9 +26,15 @@ main {
     align-items: center;
 }
 
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card__image {
-    height: 24rem;
-    width: 20rem;
+    width: 96%;
+    height: 96%;
 }
 
 .user-name {

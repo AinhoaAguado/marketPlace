@@ -89,8 +89,8 @@ function Home() {
       <ul className='card__container'>
         {courses.map(curso => (
           <li key={curso.id} className='card'>
-            <div>
-              <img src={`data:image/png;base64,${curso.img}`} className="card__image" alt="aqui van imagenes" />
+            <div className='imgContainer'>
+              <img src={`data:image/png;base64,${curso.img}`} className="card__image" alt="Course img" />
             </div>
             <div className='card__texts'>
               <div className='card__title'>
@@ -118,13 +118,14 @@ function Home() {
     <div className='modal__background'>
       <h2 className='modal__text'>Edit Product</h2>
       <label htmlFor="file__image" className='file__image'>
-        <img src="src/assets/icon-image-file.svg" alt="icon__file-upload" />
+      { !imagePreview && <img src="src/assets/icon-image-file.svg" alt="icon__file-upload" /> }
+        {imagePreview && <img src={imagePreview} alt="Preview" className= "file__imagePreview" />}
       </label>
       <input id='file__image' type="file" placeholder='img' onChange={handleImageChange} />
       <div className='container__input'>
         <label htmlFor="course__title">Course Title</label>
           <div className=''>
-            <input id='input__title' type="text" placeholder={nuevoTitulo} value={nuevoTitulo} onChange={(e) => setNuevoTitulo(e.target.value)} />
+            <input id='input__title' type="text" placeholder={nuevoTitulo}  onChange={(e) => setNuevoTitulo(e.target.value)} />
           </div>
       </div>
     <div className='container__input'>
@@ -133,16 +134,14 @@ function Home() {
       className='input__price'
         type="number"
         placeholder={nuevoPrecio}
-        value={nuevoPrecio}
         onChange={(e) => setNuevoPrecio(e.target.value)}
       />
     </div>
     <div className='container__input'>
-      <label htmlFor="course__description">DESCRIPTION</label>
+      <label htmlFor="course__description">Description</label>
       <input className='input__description'
         type="text"
         placeholder={nuevaDescripcion}
-        value={nuevaDescripcion}
         onChange={(e) => setNuevaDescripcion(e.target.value)}
       />
     </div>
