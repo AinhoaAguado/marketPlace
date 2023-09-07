@@ -1,6 +1,6 @@
 import React from "react";
 
-function Button ({text, style, type, method}){
+function Button ({text, style, type}){
     return(
         <button className={style} type={type}>{text}</button>
     )
@@ -8,4 +8,3 @@ function Button ({text, style, type, method}){
 
 export default Button;
 
-{/* <button className={style} type={type} onClick={method}>{text}</button> */}

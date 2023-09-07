@@ -13,7 +13,7 @@ nav > div{
     display: flex;
     flex-direction: column;
 }
-
+/*Esto sebería estar dentro del componente boton*/
 .btn{
     border: .3px solid white;
     border-radius: 4px;
