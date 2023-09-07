@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import Nav from "../navBar/Nav";
 import Footer from "../Footer/Footer";
 import React, { useState } from 'react';
+import postFunction from "../../Atoms/services/postFunction";
 import './addCourseForm.css'
+
 
 const AddCourseForm = () => {
    
@@ -28,30 +30,21 @@ const AddCourseForm = () => {
 
   
 
-  const onSubmit = (data) => {
-
+  const onSubmit = async (data) => {
+    if(data){
     data = {
       img: imageData,
       title: data.firstName,
       description: data.description,
       price: data.price
-    }
+    }}
+    try{
+      await postFunction(data)
+      window.location.href = "/";
+    } catch (error) {
+      console.error('Error al actualizar el curso:', error);
+    }}
 
-    fetch('http://localhost:3000/courses', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify( data ),
-    })
-      .then((response) => response.json())
-      .then(() => {
-        window.location.href = "/";
-      })
-      .catch((error) => {
-        console.error('Error al subir la imagen:', error);
-      });
-    }
 
   return (
     <>

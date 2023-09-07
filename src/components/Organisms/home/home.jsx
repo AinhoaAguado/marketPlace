@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import deleteFunction from '../../Atoms/services/delete-Btn';
+import editFunction from '../../Atoms/services/editFunction';
 import './home.css';
 import "./modalStyle.css"
+
+
 
 function Home() {
   const [courses, setCourses] = useState([]);
@@ -41,50 +45,47 @@ function Home() {
     setNuevoTitulo(curso.title);
     setNuevaDescripcion(curso.description);
     setNuevoPrecio(curso.price);
-    setNuevaImagen(curso.imag);
+    setNuevaImagen(curso.img);
     setModalVisible(true);
   };
 
-  const handleGuardarClick = () => {
+  const handleGuardarClick = async () => {
     if (coursesChoose) {
-      const productoActualizado = {
-        ...coursesChoose,
+      const updatedCourse = {
+        id: coursesChoose.id,
         title: nuevoTitulo,
         description: nuevaDescripcion,
         price: parseFloat(nuevoPrecio),
         img: imageData,
       };
 
+      try {
+        await editFunction(coursesChoose.id, updatedCourse);
 
-      fetch(`http://localhost:3000/courses/${coursesChoose.id}`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(productoActualizado),
-      })
-        .then(response => {
-          return response.json();
-        })
-        .then(data => {
-          const newCourses = courses.map(course => {
-            if (course.id === coursesChoose.id) {
-              return productoActualizado;
-            }
-            return course;
-          });
-          setCourses(newCourses);
-          setModalVisible(false);
-        })
-        .catch(error => {
-          console.error('Error:', error);
+        const newCourses = courses.map(course => {
+          if (course.id === coursesChoose.id) {
+            return updatedCourse;
+          }
+          return course;
         });
+        setCourses(newCourses);
+        setModalVisible(false);
+      } catch (error) {
+        console.error('Error al actualizar el curso:', error);
+      }
     }
+  
   };
+
+  const handleDelete = async(id) => {
+    await deleteFunction(id);
+    setCourses(prevCourses => prevCourses.filter(course => course.id !== id));
+  };
+
 
   return (
     <main>
-      <h1 className='user-name'>BIENVENIDO<span className='text-orange'> SERGIO</span></h1>
+      <h1 className='user-name'>WELCOME</h1>
       <Link to="AddForm"><button className='button__add-course'>Add Course</button></Link>
       <ul className='card__container'>
         {courses.map(curso => (
@@ -106,7 +107,7 @@ function Home() {
                 {curso.description}
               </div>
               <button className='button__edit' onClick={() => handleEditarClick(curso)}>Edit</button>
-              <button className='button__post'>Post</button>
+              <button className='button__post' onClick={()=> handleDelete(curso.id)}>Delete</button>
             </div>
           </li>
         ))}
@@ -118,7 +119,8 @@ function Home() {
     <div className='modal__background'>
       <h2 className='modal__text'>Edit Product</h2>
       <label htmlFor="file__image" className='file__image'>
-      { !imagePreview && <img src="src/assets/icon-image-file.svg" alt="icon__file-upload" /> }
+      {!imagePreview && <img src={`data:image/png;base64,${nuevaImagen}`} className='file__imageServer' alt="icon__file-upload"/> }
+
         {imagePreview && <img src={imagePreview} alt="Preview" className= "file__imagePreview" />}
       </label>
       <input id='file__image' type="file" placeholder='img' onChange={handleImageChange} />

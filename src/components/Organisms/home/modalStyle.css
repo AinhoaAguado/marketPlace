@@ -90,6 +90,11 @@ label {
     flex-direction: column;
     margin-bottom: 1rem;
 }
+
+
+.file__imageServer{
+    width: 60%;
+}
 .file__image {
     cursor: pointer;
     margin: 0;
