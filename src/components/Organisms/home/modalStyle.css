@@ -153,3 +153,9 @@ input {
     cursor: pointer;
 }
 
+@media ( max-width: 755px ){
+    .modal__background{
+        width: 70%;
+    }
+}
+
