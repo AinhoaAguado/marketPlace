@@ -1,103 +1,53 @@
-# Dashboard Marketplace 
+![logo blanco](https://github.com/AinhoaAguado/marketPlace/assets/135590740/c6688ea5-4043-4071-be03-5dfe3f5da1d4)
 
-<h2 align="center">Frontend Marketplace</h2>
-<p align="center"> React + Vite</p><br>
+## Sell Dev courses
+This project is a Dev Marketplace, developed using React. The main goal of this platform is to allow developers to easily and securely create, edit and sell their courses to people ho would like to learn about diferents programing technologies.
 
-<!-- <h3>Frontend con React:</h3> 
-Desarrolla el frontend de una página web de compra-venta online, basada en una fake API donde se registren los productos. <br><br>
-  -->
-<h3>Frontend with React</h3> 
-Develop the frontend of an online buying and selling website, based on a fake API where products are registered. <br><br>
+## Features
+Create course: In this dashboard the Dev can setup all the features of their courses like picture, description, title, etc. <br>
+Course Listings: The devs can view a list of all their courses available for sale. <br>
+Course Details: Also, they can edit and set up the information about each course, including images, features.
 
-
-<h2 align="center">Technologies:</h2>
-
-<p align="center"> 
-  <img src="" width="75" height="75"> React
-  <img src="" width="75" height="75"> Styled Component
-  <img src="" width="75" height="75"> Material UI
-  <img src="" width="75" height="75"> Figma
-  <img src="" width="75" height="75"> Jira
-  <img src="" width="75" height="75"> 
-</p>
-
----
-
-<h2 align="center">How to Install and Run the Project</h2><br>
-
-### Environment configuration:
-Clonar el repositorio<br>
-Instalar npm node<br>
-npm create vite@latest<br>
-Javascript + SWC
+## Technologies Used
+![FIGMA](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![csslogo](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 
-Make sure to have Java Development Kit [JDK](https://www.oracle.com/java/technologies/downloads/) installed on the server where the Spring Boot part will be hosted.
-Make sure to have [Node.js](https://nodejs.org/es) and npm [Node Package Manager](https://www.npmjs.com/) installed on the server where the React part will be hosted.<br><br>
 
-### Frontend [React](https://es.react.dev/):
-Run the npm install command to install all the necessary dependencies.
-Configure the API URLs in the React application to point to the server where the Spring Boot part will be hosted. This can be done using environment variables or configuration files, so that they can be easily switched between development and production environments. You can use http://localhost:4000/advertisments.<br><br>
 
----
+## Installation
+1. Clone this repository to your local machine.
+2. Navigate to the project folder in the terminal.
 
-<h2 align="center">User Story</h2><br>
+# Frontend (React)
+3. Install dependecies.
 
-### The Client made the following request:<br>
+    ```sh
+    npm install
+    ```
 
-<p>
-What are the main domain objects in a marketplace?
+Getting Started
 
-1. Advertisement ⇒ the published content:
-  a. Flats, houses, premises, ... in fotocasa or habitaclia.<br>
-  b. Job offers on InfoJobs.<br>
-  c. Cars or motorcycles on ¿adivinas? <br>
-  d. Almost everything (including the above) on milanuncios.<br>
-  
-2. User ⇒ the person looking for content.<br>
-   a. For free!<br>
+4. Start the frontend development server to access the application.
    
-3. Customer ⇒ the person or company posting content.<br>
-  a. Also called "advertiser" or "professional user".<br>
-  b. The customer pays to publish content.<br>
+    ```sh
+    npm run dev
+    ```
 
-4. Contact ⇒ when the person searching is interested in an ad and decides to contact the advertiser<br>
-  a. A perfect match!<br>
+5. Start the frontend development server to access the json server.
+   
+    ```sh
+    npm json-server --watch db.json
+    ```
+    ```sh
+    npm run server
+    ```
 
-  And some of the main functionalities for our users:<br>
-
-5. Search: <br>
-  a. By features.<br>
-  b. By free text.<br>
-  c. By geographic area<br>
-  
-6. Favorite ads<br>
-
-7. Alerts ⇒ notifications when there are new ads that meet my searches or some other criteria.<br><br>
-
-### Stakeholders: Value proposition<br>
-
-Welcome to YesHome, your number one destination to find your dream home. We are a vibrant and comprehensive marketplace that connects property buyers and sellers, offering a unique and simple experience for all users interested in the real estate market.
-
-Key features:
-
-Wide selection of properties: At YesHome, we have an extensive database of homes for sale of various typologies, sizes and locations. Whether you are looking for a cozy apartment in the city, a spacious house in the suburbs or a luxurious property by the beach, we have the perfect option for you.
-
-Easy navigation: Our intuitive and user-friendly platform makes finding your next home a hassle-free experience. With powerful search filters and a user-friendly interface, you can refine your preferences and find properties that fit your needs and budget.
-
-Detailed information: We believe in transparency and accurate information. Every property listing on YesHome includes high-quality photos, detailed descriptions and relevant data about the neighborhood, nearby amenities, key features and more. So you can make informed decisions.
-
-Verified user profiles: We ensure the safety and trust of our users by verifying profiles. Both buyers and sellers must go through an authentication process to ensure the legitimacy of transactions.
-
----
-
-### [Figma ](https://www.figma.com/file/iBVm45jcBsfdfQI7vqBfZZ/prototipo?type=design&node-id=38%3A196&mode=design&t=wbjklZPv8EfdLV1R-1)
-
-<p align="center">
-<img src="https://github.com/JFCTito/grupo_14/blob/dev/front-end/src/img/figma1.png" width="150" height="250">
-<img src="https://github.com/JFCTito/grupo_14/blob/dev/front-end/src/img/figma2.png" width="150" height="250">
-<img src="https://github.com/JFCTito/grupo_14/blob/dev/front-end/src/img/figma3.png" width="150" height="250">
-<img src="https://github.com/JFCTito/grupo_14/blob/dev/front-end/src/img/figma4.png" width="150" height="250">
-</p>
-
----
+## Developers
+Pedro Martínez <br>
+Emily Martínez <br>
+Ainhoa Aguado  <br>
+Victor Nash <br>
+Bryan Mariano <br>
+Geovanny Catari <br>
