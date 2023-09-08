@@ -35,6 +35,14 @@ Getting Started
     npm run dev
     ```
 
+5. Start the frontend development server to access the json server.
+   
+    ```sh
+    npm json-server --watch db.json
+    ```
+    ```sh
+    npm run server
+    ```
 
 ## Developers
 Pedro Martínez <br>
