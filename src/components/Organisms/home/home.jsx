@@ -148,7 +148,7 @@ function Home() {
       />
     </div>
     <div className='container__buttons'>
-      <button id='button__submit' onClick={handleGuardarClick}>Guardar</button>
+      <button id='button__submit'className='btn__save' onClick={handleGuardarClick}>Guardar</button>
       <button id='button__back' onClick={() => setModalVisible(false)}>Cancelar</button>
     </div>
     </div>

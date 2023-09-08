@@ -25,8 +25,7 @@
     background-color: #fff;
     border: solid #fff 1px;
     border-radius: 55px;
-    width: 50%;
-    height: 100%;
+    width: 45%;
 }
 .modal__text{
     margin-top: 3%;
@@ -93,7 +92,7 @@ label {
 
 
 .file__imageServer{
-    width: 60%;
+    width: 30%;
 }
 .file__image {
     cursor: pointer;
@@ -119,12 +118,14 @@ img {
     gap: 5%;
     margin-bottom: 1rem;
 }
-#button__submit{
-    height: 5.5rem;
-    width: 11rem;
+
+
+.btn__save{
+    height: 3rem;
+    width: 4rem;
     background-color: #81BDD7;
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 500;
     border-radius: 1rem;
     border: none;
@@ -137,11 +138,11 @@ input {
     border: 0.6px solid grey;
 }
 #button__back{
-    height: 5.5rem;
+    height: 3rem;
     width: 11rem;
     background-color: #81BDD7;
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 500;
     border-radius: 1rem;
     border: none;
